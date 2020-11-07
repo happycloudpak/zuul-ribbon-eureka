@@ -1,0 +1,18 @@
+zuul:
+  host:
+    connect-timeout-millis: 3000
+    socket-timeout-millis: 3000
+  routes:      
+    svcmesh:
+      path: /svcmesh/**
+      service-id: backend-service
+  retryable: true 
+  
+management:
+  security: 
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+     

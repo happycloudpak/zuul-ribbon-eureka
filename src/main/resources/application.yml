@@ -1,0 +1,6 @@
+spring: 
+  application: 
+    name: zuul-ribbon-eureka
+  profiles:
+    active: local
+    include: common,common-ribbon  
