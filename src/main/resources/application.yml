@@ -3,4 +3,4 @@ spring:
     name: zuul-ribbon-eureka
   profiles:
     active: local
-    include: common,common-ribbon  
+    include: common,common-eureka,common-ribbon  
